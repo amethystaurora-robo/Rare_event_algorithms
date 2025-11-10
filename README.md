@@ -19,3 +19,5 @@ the events common.
    by using an exponentially increasing time average multiplied by the integral autocorrelation time and divided by a weighting parameter.
 7. After the weights have been computed, trajectories with weights near zero are killed and those with higher weights are cloned proportionally to their weight (keeping the same
    number of trajectories overall). The killed trajectories take on the values of the cloned ones, with slight perturbations, the simulation is run again, and the process repeats.
+
+To check that the algorithm has worked, I examine the PDFs of the old trajectories and the new trajectories after applying the algorithm.
