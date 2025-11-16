@@ -1,6 +1,13 @@
 # Gottwald Model
 
-A coupled model of the simplified ocean from Stommel and the Lorenz-84 atmosphere
+A coupled model of the simplified ocean from Stommel and the Lorenz-84 atmosphere. 
+<p>
+See more:
+</p><p>
+  <a href="https://github.com/amethystaurora-robo/simulation_practice/blob/main/" target="_blank">
+    <img src="https://img.shields.io/badge/Gottwald%20Model-f2a743?style=for-the-badge&logo=adobeacrobatreader&logoColor=white"/>
+  </a>
+</p>
 
 # Rare Event Algorithm
 
