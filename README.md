@@ -15,11 +15,12 @@ An algorithm applied to a distribution of values with rare events, a, at the tai
 
 <p>
   <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/importance_sampling.png" width="500">
+</p><p>
+  (F. Ragone, 2025)
 </p>
-(F. Ragone, 2025)
-
+<p>
 The algorithm used is a cloning algorithm, where trajectories are given weights based on how likely they are to lead to a rare event. Trajectories with weights close to zero are killed, and trajectories with higher weights are cloned, as in the schematic below.
-
+</p>
 <p>
   <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/rare_trajecs.png" width="500">
 </p>
