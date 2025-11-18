@@ -4,8 +4,8 @@ A coupled model of the simplified ocean from Stommel and the Lorenz-84 atmospher
 <p>
 See more:
 </p><p>
-  <a href="https://github.com/amethystaurora-robo/simulation_practice/blob/main/" target="_blank">
-    <img src="https://img.shields.io/badge/Gottwald%20Model-3366BB?style=for-the-badge&logo=adobeacrobatreader&logoColor=white"/>
+  <a href="https://github.com/amethystaurora-robo/simulation_practice" target="_blank">
+    <img src="https://img.shields.io/badge/Gottwald%20Model-3366BB??style=for-the-badge&logo=github&logoColor=white"/>
   </a>
 </p>
 
