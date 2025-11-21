@@ -1,4 +1,5 @@
-# Gottwald Model
+# Introduction
+## Gottwald model
 
 A coupled model of the simplified ocean from Stommel and the Lorenz-84 atmosphere. 
 <p>
@@ -9,12 +10,12 @@ See more:
   </a>
 </p>
 
-# Rare Event Algorithm
+## Rare Event Algorithm
 
 An algorithm applied to a distribution of values with rare events, a, at the tail of the distribution-enabling the distribution to shift and increase the number of rare events, making the events common.
 
 <p>
-  <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/importance_sampling.png" width="500">
+  <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/importance_sampling.png" width="500">
 </p><p>
   (F. Ragone, 2025)
 </p>
@@ -22,24 +23,51 @@ An algorithm applied to a distribution of values with rare events, a, at the tai
 The algorithm used is a cloning algorithm, where trajectories are given weights based on how likely they are to lead to a rare event. Trajectories with weights close to zero are killed, and trajectories with higher weights are cloned, as in the schematic below.
 </p>
 <p>
-  <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/rare_trajecs.png" width="500">
+  <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/rare_trajecs.png" width="500">
 </p>
 
-# Steps
+# Methods
 
-1. A control run of the Gottwald model is initiated.
-2. The auto-correlation function is computed, by finding correlations between each value of the AMOC from the Gottwald model to each other value
-3. The integral auto-correlation is computed, to determine the system memory and resampling time.
-4. This time is used to split the run into blocks, and resample at the end of each block.
+1. A control run of the Gottwald model is initiated with initial conditions leading to the stable attractor. The time series and distribution of AMOC indices is shown below:
+<p>
+  <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/timeseries_controlrun.png" width="500">
+</p>
+<p>
+  <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/control_hist.png" width="500">
+</p>
 
-5. Runs are begun with 6-7 different initial conditions.
-6. At the end of the first time block, the trajectories are put into the rare event algorithm, which computes the weight for each trajectory (its likelihood to generate a rare event),
-   by using an exponentially increasing time average multiplied by the integral autocorrelation time and divided by a weighting parameter.
-7. After the weights have been computed, trajectories with weights near zero are killed and those with higher weights are cloned proportionally to their weight (keeping the same
-   number of trajectories overall). The killed trajectories take on the values of the cloned ones, with slight perturbations, the simulation is run again, and the process repeats.
+2. A rare event, a, is at the tail of the distribution, 3 standard deviations below the mean. Return times of all values of a are computed and shown below:
+<p>
+  <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/returntimes_control.png" width="500">
+</p>
 
-To check that the algorithm has worked, I examine the PDFs of the old trajectories and the new trajectories after applying the algorithm.
+3. The auto-correlation function is determined by finding correlations between an AMOC index and itself at lag. This shows the system memory over time, and is used to determine resampling time for the rare event algorithm, by computing the integral auto-correlation time. 
+<p>
+  <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/acfunc_control.png" width="500">
+</p>
 
-References:
+4. The integral auto-correlation time, tau, is used to compute k, which determines the shift of the distribution at stationarity
+<p>
+  <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/k_equation.png" width="500">
+</p><p>
+  (F. Ragone, 2025)
+</p>
+  
+5. From the control run, initial conditions T,S,x,y,z are taken 5 time units apart, resulting in 200 trajectories with unique initial conditions. At the end of the first time block, the trajectories are put into the rare event algorithm, which computes the weight for each trajectory using the equation below:
+<p>
+  <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/weights.png" width="500">
+</p>
+6. Trajectories with weights near zero are killed and those with higher weights are cloned proportionally to their weight (keeping the same
+   number of trajectories overall). The killed trajectories take on the values of the cloned ones, with slight perturbations, the simulation is run again, and the process repeats. 
 
-(F. Ragone, personal communication, 2025)
+# Results
+Time series of the run showing transitions
+ancestor plots
+PDF of control vs shifted
+
+# References:
+
+1. (F. Ragone, personal communication, 2025)
+
+2. Ragone F, Bouchet F. Computation of extreme values of time averaged observables in climate models with large deviation techniques. J Stat Phys. 2020;179(5-6):1637-65. doi:10.1007/s10955-019-02429-7.
+
