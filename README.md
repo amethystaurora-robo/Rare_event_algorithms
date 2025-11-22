@@ -61,8 +61,8 @@ The algorithm used is a cloning algorithm, where trajectories are given weights 
    number of trajectories overall). The killed trajectories take on the values of the cloned ones, with slight perturbations, the simulation is run again, and the process repeats. 
 
 # Results
-Time series of the run showing transitions
-ancestor plots
+Time series of the run showing transitions for k -1000,-1050,-2000,-2050,-3000
+ancestor plots - either trajectories that show killing and shift of distribution, or continuation through time, tying back to original ancestor
 PDF of control vs shifted
 
 # References:
