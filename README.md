@@ -72,7 +72,7 @@ The algorithm used is a cloning algorithm, where trajectories are given weights 
   <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/plots/lineplot_20year_200traj_-1000k.png" width="500">
 </p>
 <p>
-  <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/plots/lineplot_20year_200traj_-442k.png" width="500">
+  <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/plots/lineplot_16year_200traj_-442k.png" width="500">
 </p>
 <p>
   <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/plots/barcode_20year_200traj_-3000k.png" width="500">
@@ -84,7 +84,7 @@ The algorithm used is a cloning algorithm, where trajectories are given weights 
   <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/plots/barcode_20year_200traj_-1000k.png" width="500">
 </p>
 <p>
-  <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/plots/barcode_20year_200traj_-442k.png" width="500">
+  <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/plots/barcode_16year_200traj_-442k.png" width="500">
 </p>
 PDF of control vs shifted
 
