@@ -62,29 +62,16 @@ The algorithm used is a cloning algorithm, where trajectories are given weights 
 
 # Results
 
+Below, 200 trajectories are simulated for 16 or 20 years (denoted in the plot titles). With k<-200, transitions occur around year 10. Trajectories are tracked to confirm the original ancestor of final shifted trajectories. Below, degeneracy of trajectories are shown: all shifted trajectories evolve from one common ancestor. A value of k, -442 has been calculated to specifically target the off state of the AMOC.
 <p>
-  <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/plots/lineplot_20year_200traj_-3000k.png" width="500">
-</p>
-<p>
-  <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/plots/lineplot_20year_200traj_-2000k.png" width="500">
-</p>
-<p>
-  <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/plots/lineplot_20year_200traj_-1000k.png" width="500">
-</p>
-<p>
-  <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/plots/lineplot_16year_200traj_-442k.png" width="500">
-</p>
-<p>
-  <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/plots/barcode_20year_200traj_-3000k.png" width="500">
-</p>
-<p>
-  <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/plots/barcode_20year_200traj_-2000k.png" width="500">
-</p>
-<p>
-  <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/plots/barcode_20year_200traj_-1000k.png" width="500">
-</p>
-<p>
-  <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/plots/barcode_16year_200traj_-442k.png" width="500">
+  <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/plots/lineplot_20year_200traj_-3000k.png" width="400">
+  <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/plots/lineplot_20year_200traj_-2000k.png" width="400">
+  <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/plots/lineplot_20year_200traj_-1000k.png" width="400">
+  <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/plots/lineplot_16year_200traj_-442k.png" width="400">
+  <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/plots/barcode_20year_200traj_-3000k.png" width="400">
+  <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/plots/barcode_20year_200traj_-2000k.png" width="400">
+  <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/plots/barcode_20year_200traj_-1000k.png" width="400">
+  <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/plots/barcode_16year_200traj_-442k.png" width="400">
 </p>
 PDF of control vs shifted
 
