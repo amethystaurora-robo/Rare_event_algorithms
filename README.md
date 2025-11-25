@@ -1,4 +1,4 @@
-# Introduction:
+# Introduction
 ## Gottwald model
 
 A coupled model of the simplified ocean from Stommel and the Lorenz-84 atmosphere. 
@@ -61,8 +61,31 @@ The algorithm used is a cloning algorithm, where trajectories are given weights 
    number of trajectories overall). The killed trajectories take on the values of the cloned ones, with slight perturbations, the simulation is run again, and the process repeats. 
 
 # Results
-Time series of the run showing transitions for k -1000,-1050,-2000,-2050,-3000
-ancestor plots - either trajectories that show killing and shift of distribution, or continuation through time, tying back to original ancestor
+
+<p>
+  <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/plots/lineplot_20year_200traj_-3000k.png" width="500">
+</p>
+<p>
+  <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/plots/lineplot_20year_200traj_-2000k.png" width="500">
+</p>
+<p>
+  <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/plots/lineplot_20year_200traj_-1000k.png" width="500">
+</p>
+<p>
+  <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/plots/lineplot_20year_200traj_-442k.png" width="500">
+</p>
+<p>
+  <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/plots/barcode_20year_200traj_-3000k.png" width="500">
+</p>
+<p>
+  <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/plots/barcode_20year_200traj_-2000k.png" width="500">
+</p>
+<p>
+  <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/plots/barcode_20year_200traj_-1000k.png" width="500">
+</p>
+<p>
+  <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/plots/barcode_20year_200traj_-442k.png" width="500">
+</p>
 PDF of control vs shifted
 
 # References:
