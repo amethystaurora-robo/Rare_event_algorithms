@@ -1,4 +1,4 @@
-# Introduction
+# Introduction:
 ## Gottwald model
 
 A coupled model of the simplified ocean from Stommel and the Lorenz-84 atmosphere. 
