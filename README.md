@@ -74,6 +74,12 @@ Below, 200 trajectories are simulated for 16 or 20 years (denoted in the plot ti
   <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/plots/barcode_20year_200traj_-500k.png" width="400">
 </p>
 
+I confirm that Importance Sampling has worked because my distribution of values after the transition has changed.
+
+<p>
+  <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/hist_shifted_values.png" width="400"
+</p>
+
 After observing transitions, it was interesting to investigate whether changing k=0 (effectively turning off the Rare Event algorithm) would allow for spontaneous transitions to the on state. Below, it is shown that this did not occur in a 100-year simulation.
 
 <p>
