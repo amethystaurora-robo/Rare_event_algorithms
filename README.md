@@ -87,7 +87,15 @@ After observing transitions to the AMOC off state, it was interesting to investi
   <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/plots/barcode_22year_200traj_0k.png" width="400">
 </p>
 
-It was also interesting to investigate whether transitions would be observed when forcing only Temperature or Salinity with the Rare Event algorithm. Using the bifurcation diagram below, k was calculated to target the AMOC off state for both temperature and salinity, with values of 
+It was also interesting to investigate whether transitions would be observed when forcing only Temperature or Salinity with the Rare Event algorithm. Using the bifurcation diagram below, k was calculated to target the AMOC off state for both temperature and salinity, with values of 0.55 and 0.4, respectively.
+
+<p>
+  <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/bifurcation.png" width="500">
+</p>
+
+For salinity, a k value of 3000 is calculated using the targeted value. After some trial and error, a transition between two states was observed with a k value of 5000.
+
+
 
 # References:
 
