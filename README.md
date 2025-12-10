@@ -92,6 +92,7 @@ It was also interesting to investigate whether transitions would be observed whe
 <p>
   <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/bifurcation.png" width="500">
 </p>
+(Mehling et al, 2024)
 
 For salinity, a k value of 3000 is calculated using the targeted value. After some trial and error, a transition between two states was observed with a k value of 5000.
 
@@ -105,4 +106,6 @@ For salinity, a k value of 3000 is calculated using the targeted value. After so
 1. (F. Ragone, personal communication, 2025)
 
 2. Ragone F, Bouchet F. Computation of extreme values of time averaged observables in climate models with large deviation techniques. J Stat Phys. 2020;179(5-6):1637-65. doi:10.1007/s10955-019-02429-7.
+
+3. Mehling, O., Börner, R. and Lucarini, V., 2024. Limits to predictability of the asymptotic state of the Atlantic Meridional Overturning Circulation in a conceptual climate model. Physica D: Nonlinear Phenomena, 459, p.134043.
 
