@@ -80,7 +80,7 @@ I confirm that Importance Sampling has worked because my distribution of values 
   <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/hist_shifted_values.png" width="500"
 </p>
 
-After observing transitions, it was interesting to investigate whether changing k=0 (effectively turning off the Rare Event algorithm) would allow for spontaneous transitions to the on state. Below, it is shown that this did not occur in a 100-year simulation.
+After observing transitions to the AMOC off state, it was interesting to investigate whether changing k=0 (effectively turning off the Rare Event algorithm) would allow for spontaneous transitions back to the on state. Below, it is shown that this did not occur in a 100-year simulation.
 
 <p>
   <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/plots/lineplot_22year_200traj_0k.png" width="400">
