@@ -95,7 +95,10 @@ It was also interesting to investigate whether transitions would be observed whe
 
 For salinity, a k value of 3000 is calculated using the targeted value. After some trial and error, a transition between two states was observed with a k value of 5000.
 
-
+<p>
+  <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/plots/lineplot_30year_200traj_5000k.png" width="400">
+  <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/plots/barcode_30year_200traj_5000k.png" width="400">
+</p>
 
 # References:
 
