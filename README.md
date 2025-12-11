@@ -1,5 +1,5 @@
 #To Do
-1. change auto-correlation graph to the correct one (should be a correlation of 1 at time 0)
+
 2. (eventually) fix degeneracy of trajectories by initializing more trajectories (try 1000, and a longer control run)
 3. Try to find a value for temperature at which a transition can be observed
 4. Turn RE algorithm off after transition in salinity, to observe a convergence to the true attractor (and possibly a spontaneous transition back)
