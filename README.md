@@ -1,13 +1,14 @@
 #To Do
 
-2. (eventually) fix degeneracy of trajectories by initializing more trajectories (try 1000, and a longer control run)
+2. (eventually) fix degeneracy of trajectories by initializing more trajectories (try 1000, and a longer control run) (doing this now)
 3. Try to find a value for temperature at which a transition can be observed
-4. Turn RE algorithm off after transition in salinity, to observe a convergence to the true attractor (and possibly a spontaneous transition back)
+4. Turn RE algorithm off after transition in salinity, to observe a convergence to the true attractor (and possibly a spontaneous transition back) (and redo because now have a new control run)
 5. Plot the trajectories of both AMOC and salinity as they transition from one to the other attractor:
    - will need a scatter plot of the phase space of the on and off attractors
    - separate colors of the trajectories (can also be scatter) leading from on to off
    - Can try completing the diagram if off goes to on (but not necessary)
-   - (I think) T-S is on one axis and x,y,z is on another? but that doesn't seem to work, flesh this out more
+   - T on x axis, S on y axis, x^2+y^2+z^2/2 on z axis
+   - Will need to separate two attractors, right now they don't look separated
 
 # Introduction
 ## Gottwald model
