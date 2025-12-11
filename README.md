@@ -1,3 +1,14 @@
+#To Do
+1. change auto-correlation graph to the correct one (should be a correlation of 1 at time 0)
+2. (eventually) fix degeneracy of trajectories by initializing more trajectories (try 1000, and a longer control run)
+3. Try to find a value for temperature at which a transition can be observed
+4. Turn RE algorithm off after transition in salinity, to observe a convergence to the true attractor (and possibly a spontaneous transition back)
+5. Plot the trajectories of both AMOC and salinity as they transition from one to the other attractor:
+   - will need a scatter plot of the phase space of the on and off attractors
+   - separate colors of the trajectories (can also be scatter) leading from on to off
+   - Can try completing the diagram if off goes to on (but not necessary)
+   - (I think) T-S is on one axis and x,y,z is on another? but that doesn't seem to work, flesh this out more
+
 # Introduction
 ## Gottwald model
 
@@ -62,7 +73,7 @@ The algorithm used is a cloning algorithm, where trajectories are given weights 
 
 # Results
 
-Below, 200 trajectories are simulated for 16 or 20 years (denoted in the plot titles). With k<-200, transitions occur around year 10. Trajectories are tracked to confirm the original ancestor of final shifted trajectories. Below, degeneracy of trajectories are shown: all shifted trajectories evolve from one common ancestor. A value of k, -442 has been calculated to specifically target the off state of the AMOC.
+Below, 200 trajectories are simulated for 16 or 20 years (denoted in the plot titles). With k<-200, transitions occur around year 10. Trajectories are tracked to confirm the original ancestor of final shifted trajectories. Below, degeneracy of trajectories are shown: all shifted trajectories evolve from one common ancestor. This problem may be solved by initializing more trajectories.
 <p>
   <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/plots/lineplot_20year_200traj_-3000k.png" width="400">
   <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/plots/lineplot_20year_200traj_-2000k.png" width="400">
