@@ -5,6 +5,7 @@
 5. Determine what the (true) values of the attractor are for T and S in AMOC on, and AMOC off - filter plot to plot the two attractors in different colors
 6. It would be good to also from this plot the bifurcation diagram for T and S
 7. THEN plot the trajectory paths (could use lines) (also add in the case it goes from off to on)
+8. Would also be good to see any changes in auto-correlation and variance as transition happens
 
 # Introduction
 ## Gottwald model
