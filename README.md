@@ -3,7 +3,8 @@
 3. Try to find a value for temperature at which a transition can be observed
 4. Run salt and amoc transition trajs one more time, ensuring k is turned off and the new control run is used (with 1k trajs), check to see if it fixes degeneracy of trajs, may also fix the transition pathway?
 5. Determine what the (true) values of the attractor are for T and S in AMOC on, and AMOC off - filter plot to plot the two attractors in different colors
-6. THEN plot the trajectory paths (could use lines) (also add in the case it goes from off to on)
+6. It would be good to also from this plot the bifurcation diagram for T and S
+7. THEN plot the trajectory paths (could use lines) (also add in the case it goes from off to on)
 
 # Introduction
 ## Gottwald model
