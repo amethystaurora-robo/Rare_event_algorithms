@@ -1,9 +1,4 @@
-#To Do
-4. Degeneracy of trajectoreis isn't fixed with more trajs, can try a lower value of k for next run
-5. Determine what the (true) values of the attractor are for T and S in AMOC on, and AMOC off - filter plot to plot the two attractors in different colors
-6. It would be good to also from this plot the bifurcation diagram for T and S
-7. THEN plot the trajectory paths (could use lines) (also add in the case it goes from off to on)
-8. Would also be good to see any changes in auto-correlation and variance as transition happens
+
 
 # Introduction
 ## Gottwald model
@@ -108,6 +103,15 @@ For salinity, a k value of 3000 is calculated using the targeted value. After so
   <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/plots/barcode_30year_200traj_5000k.png" width="400">
 </p>
 
+An attempt was made to solve degeneracy of trajectories by increasing the number of trajectories used in the rare event algorithm from 200 to 1000. Below, it is shown that with the same values of k, degeneracy is still a problem for both AMOC and salinity.
+
+<p>
+  <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/plots/amoc_lineplot_20year_1000traj_0k.png" width="400">
+  <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/plots/amoc_barcode_20year_1000traj_0k.png" width="400">
+  <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/plots/salinity_lineplot_20year_1000traj_0k.png" width="400">
+  <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/plots/salinity_barcode_20year_1000traj_0k.png" width="400">
+</p>
+
 # References:
 
 1. (F. Ragone, personal communication, 2025)
@@ -116,3 +120,6 @@ For salinity, a k value of 3000 is calculated using the targeted value. After so
 
 3. Mehling, O., Börner, R. and Lucarini, V., 2024. Limits to predictability of the asymptotic state of the Atlantic Meridional Overturning Circulation in a conceptual climate model. Physica D: Nonlinear Phenomena, 459, p.134043.
 
+#To Do
+4. Degeneracy of trajectoreis isn't fixed with more trajs, can try a lower value of k for next run
+8. Would also be good to see any changes in auto-correlation and variance as transition happens
