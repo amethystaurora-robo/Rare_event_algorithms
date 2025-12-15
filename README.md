@@ -112,6 +112,13 @@ An attempt was made to solve degeneracy of trajectories by increasing the number
   <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/plots/salinity_barcode_20year_1000traj_0k.png" width="400">
 </p>
 
+It was interesting to observe whether the transition has an instanton - a least unlikely path between states. Below the transition paths between salinity on/off and AMOC on/off are compared. It is clear that they take the same path. The first plot below compares on and off states as they transition through time. The second plot denotes possible attractors by using a time cutoff using the line graphs for both transition states. 
+
+<p>
+  <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/transition_2D_time.png" width="400">
+  <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/transition_2D_state.png" width="400">
+</p>
+
 # References:
 
 1. (F. Ragone, personal communication, 2025)
