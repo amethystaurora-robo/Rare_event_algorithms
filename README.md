@@ -128,5 +128,6 @@ It was interesting to observe whether the transition has an instanton - a least 
 3. Mehling, O., Börner, R. and Lucarini, V., 2024. Limits to predictability of the asymptotic state of the Atlantic Meridional Overturning Circulation in a conceptual climate model. Physica D: Nonlinear Phenomena, 459, p.134043.
 
 #To Do
-4. Degeneracy of trajectoreis isn't fixed with more trajs, can try a lower value of k for next run
+4. Degeneracy of trajectoreis isn't fixed with more trajs, can try a lower value of k / less time for next run
+Also need to turn RE algorithm back on after the switch, to see if it goes back to on state
 8. Would also be good to see any changes in auto-correlation and variance as transition happens
