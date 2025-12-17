@@ -132,6 +132,8 @@ Since the final aim of this project is to develop Early Warning Systems, it was 
 
 Above an increase of variance can be observed for both temperature and salinity prior to transitions in both forced systems. An increase of auto-correlation was not observed for either transition. Atmospheric variables x,y, and z showed fluctuations and no clear trend for either auto-correlation or variance. 
 
+The final aim of this study is to observe any transitions back to the on state with continued but opposing forcing using the RE algorithm. Results below.
+
 # References:
 
 1. (F. Ragone, personal communication, 2025)
@@ -139,8 +141,3 @@ Above an increase of variance can be observed for both temperature and salinity 
 2. Ragone F, Bouchet F. Computation of extreme values of time averaged observables in climate models with large deviation techniques. J Stat Phys. 2020;179(5-6):1637-65. doi:10.1007/s10955-019-02429-7.
 
 3. Mehling, O., Börner, R. and Lucarini, V., 2024. Limits to predictability of the asymptotic state of the Atlantic Meridional Overturning Circulation in a conceptual climate model. Physica D: Nonlinear Phenomena, 459, p.134043.
-
-#To Do
-4. Degeneracy of trajectoreis isn't fixed with more trajs, can try a lower value of k / less time for next run
-Also need to turn RE algorithm back on after the switch, to see if it goes back to on state
-8. Would also be good to see any changes in auto-correlation and variance as transition happens
