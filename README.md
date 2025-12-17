@@ -119,6 +119,19 @@ It was interesting to observe whether the transition has an instanton - a least 
   <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/transition_2D_state.png" width="400">
 </p>
 
+Since the final aim of this project is to develop Early Warning Systems, it was also interesting to investigate whether common Early Warning Signals, including an increase of variance of state variables and an increase in auto-correlation were observed prior to the transition paths for both forcing in AMOC and salinity. 
+
+<p>
+  <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/acfunc_Salinity RE Forcing_Salinity.png" width="400">
+  <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/acfunc_AMOC RE Forcing_Salinity.png" width="400">
+  <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/variance_Salinity RE Forcing_Temperature.png" width="400">
+  <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/variance_AMOC RE Forcing_Salinity.png" width="400">
+  <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/variance_Salinity RE Forcing_Salinity.png" width="400">
+  <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/variance_AMOC RE Forcing_Temperature.png" width="400">
+</p>
+
+Above an increase of variance can be observed for both temperature and salinity prior to transitions in both forced systems. An increase of auto-correlation was not observed for either transition. Atmospheric variables x,y, and z showed fluctuations and no clear trend for either auto-correlation or variance. 
+
 # References:
 
 1. (F. Ragone, personal communication, 2025)
