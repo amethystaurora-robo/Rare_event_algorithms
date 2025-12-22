@@ -66,14 +66,14 @@ The algorithm used is a cloning algorithm, where trajectories are given weights 
 
 Below, 200 trajectories are simulated for 16 or 20 years (denoted in the plot titles). With k<-200, transitions occur around year 10. Trajectories are tracked to confirm the original ancestor of final shifted trajectories. Below, degeneracy of trajectories are shown: all shifted trajectories evolve from one common ancestor. This problem may be solved by initializing more trajectories.
 <p>
-  <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/plots/lineplot_20year_200traj_-3000k.png" width="500">
-  <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/plots/lineplot_20year_200traj_-2000k.png" width="500">
-  <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/plots/lineplot_20year_200traj_-1000k.png" width="500">
-  <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/plots/lineplot_20year_200traj_-500k.png" width="500">
-  <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/plots/barcode_20year_200traj_-3000k.png" width="500">
-  <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/plots/barcode_20year_200traj_-2000k.png" width="500">
-  <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/plots/barcode_20year_200traj_-1000k.png" width="500">
-  <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/plots/barcode_20year_200traj_-500k.png" width="500">
+  <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/plots/lineplot_20year_200traj_-3000k.png" width="400">
+  <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/plots/lineplot_20year_200traj_-2000k.png" width="400">
+  <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/plots/lineplot_20year_200traj_-1000k.png" width="400">
+  <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/plots/lineplot_20year_200traj_-500k.png" width="400">
+  <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/plots/barcode_20year_200traj_-3000k.png" width="400">
+  <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/plots/barcode_20year_200traj_-2000k.png" width="400">
+  <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/plots/barcode_20year_200traj_-1000k.png" width="400">
+  <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/plots/barcode_20year_200traj_-500k.png" width="400">
 </p>
 
 I confirm that Importance Sampling has worked because my distribution of values after the transition has changed.
@@ -85,8 +85,8 @@ I confirm that Importance Sampling has worked because my distribution of values 
 After observing transitions to the AMOC off state, it was interesting to investigate whether changing k=0 (effectively turning off the Rare Event algorithm) would allow for spontaneous transitions back to the on state. Below, it is shown that this did not occur in a 100-year simulation.
 
 <p>
-  <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/plots/lineplot_22year_200traj_0k.png" width="500">
-  <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/plots/barcode_22year_200traj_0k.png" width="500">
+  <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/plots/lineplot_22year_200traj_0k.png" width="400">
+  <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/plots/barcode_22year_200traj_0k.png" width="400">
 </p>
 
 It was also interesting to investigate whether transitions would be observed when forcing only Temperature or Salinity with the Rare Event algorithm. Using the bifurcation diagram below, k was calculated to target the AMOC off state for both temperature and salinity, with values of 0.55 and 0.4, respectively.
@@ -99,35 +99,35 @@ It was also interesting to investigate whether transitions would be observed whe
 For salinity, a k value of 3000 is calculated using the targeted value. After some trial and error, a transition between two states was observed with a k value of 5000.
 
 <p>
-  <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/plots/lineplot_30year_200traj_5000k.png" width="500">
-  <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/plots/barcode_30year_200traj_5000k.png" width="500">
+  <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/plots/lineplot_30year_200traj_5000k.png" width="400">
+  <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/plots/barcode_30year_200traj_5000k.png" width="400">
 </p>
 
 An attempt was made to solve degeneracy of trajectories by increasing the number of trajectories used in the rare event algorithm from 200 to 1000. Below, it is shown that with the same values of k, degeneracy is still a problem for both AMOC and salinity.
 
 <p>
-  <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/plots/amoc_lineplot_20year_1000traj_0k.png" width="500">
-  <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/plots/amoc_barcode_20year_1000traj_0k.png" width="500">
-  <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/plots/salinity_lineplot_20year_1000traj_0k.png" width="500">
-  <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/plots/salinity_barcode_20year_1000traj_0k.png" width="500">
+  <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/plots/amoc_lineplot_20year_1000traj_0k.png" width="400">
+  <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/plots/amoc_barcode_20year_1000traj_0k.png" width="400">
+  <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/plots/salinity_lineplot_20year_1000traj_0k.png" width="400">
+  <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/plots/salinity_barcode_20year_1000traj_0k.png" width="400">
 </p>
 
 It was interesting to observe whether the transition has an instanton - a least unlikely path between states. Below the transition paths between salinity on/off and AMOC on/off are compared. It is clear that they take the same path. The first plot below compares on and off states as they transition through time. The second plot denotes possible attractors by using a time cutoff using the line graphs for both transition states. 
 
 <p>
-  <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/transition_2D_time.png" width="500">
-  <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/transition_2D_state.png" width="500">
+  <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/transition_2D_time.png" width="400">
+  <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/transition_2D_state.png" width="400">
 </p>
 
 Since the final aim of this project is to develop Early Warning Systems, it was also interesting to investigate whether common Early Warning Signals, including an increase of variance of state variables and an increase in auto-correlation were observed prior to the transition paths for both forcing in AMOC and salinity. 
 
 <p>
-  <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/acfunc_Salinity RE Forcing_Salinity.png" width="500">
-  <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/acfunc_AMOC RE Forcing_Salinity.png" width="500">
-  <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/variance_Salinity RE Forcing_Temperature.png" width="500">
-  <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/variance_AMOC RE Forcing_Salinity.png" width="500">
-  <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/variance_Salinity RE Forcing_Salinity.png" width="500">
-  <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/variance_AMOC RE Forcing_Temperature.png" width="500">
+  <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/acfunc_Salinity RE Forcing_Salinity.png" width="400">
+  <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/acfunc_AMOC RE Forcing_Salinity.png" width="400">
+  <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/variance_Salinity RE Forcing_Temperature.png" width="400">
+  <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/variance_AMOC RE Forcing_Salinity.png" width="400">
+  <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/variance_Salinity RE Forcing_Salinity.png" width="400">
+  <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/variance_AMOC RE Forcing_Temperature.png" width="400">
 </p>
 
 Above an increase of variance can be observed for both temperature and salinity prior to transitions in both forced systems. An increase of auto-correlation was not observed for either transition. Atmospheric variables x,y, and z showed fluctuations and no clear trend for either auto-correlation or variance. 
