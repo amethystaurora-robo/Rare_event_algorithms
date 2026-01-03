@@ -135,7 +135,7 @@ Above an increase of variance can be observed for both temperature and salinity 
 The final aim of this study is to observe transitions back to the on state by turning the RE algorithm back on with opposite forcing (changing the sign of k). In the case of the AMOC, a transition was observed back to the on state shown below:
 
 <p>
-  <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/plots/amoc_lineplot_20year_200traj_1500k.png" width="400">
+  <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/plots/amoc_lineplot_30year_200traj_1500k.png" width="400">
 </p>
 
 The trajectory path is again computed from the off state to the on state, shown below. 
