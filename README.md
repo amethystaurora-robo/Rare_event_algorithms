@@ -132,7 +132,11 @@ Since the final aim of this project is to develop Early Warning Systems, it was 
 
 Above an increase of variance can be observed for both temperature and salinity prior to transitions in both systems forced with RE sampling. An increase of auto-correlation was not observed for either transition. Atmospheric variables x,y, and z showed fluctuations and no clear trend for either auto-correlation or variance. 
 
-The final aim of this study is to observe transitions back to the on state by turning the RE algorithm back on with opposite forcing (changing the sign of k). In both cases, transitions are observed back to the on state in the time series shown below. 
+The final aim of this study is to observe transitions back to the on state by turning the RE algorithm back on with opposite forcing (changing the sign of k). In the case of the AMOC, a transition was observed back to the on state shown below:
+
+<p>
+  <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/amoc_lineplot_20year_200traj_0k.png" width="400">
+</p>
 
 The trajectory path is again computed from the off state to the on state, shown below. 
 
