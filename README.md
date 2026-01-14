@@ -142,7 +142,7 @@ The trajectory path is again computed from the off state to the on state, shown 
 
 To Do: 
 1. Still find transitions back to the on state (first re-doing AMOC on->off since it was overwritten)
-2. Verify agg label
+2. Verify agg label (explanation: basically, there are 200 trajectory lines which are following their original unit labels, so although the trajectories shift as they are killed and cloned from another trajectory number, that shift is shown as the same line, changing color to reflect the new ancestor. The problem of plotting this in another way is the number of lines are reduced, showing only one line as an average of all trajectories, even though there are still 200 trajectories.)
 3. Make comparable plots with salinity-driven transitions vs AMOC in the same data
 4. Edit presentation on how to figure out k (intro slides, bifurcation diagram, equations)
 5. change the way that titles are written
