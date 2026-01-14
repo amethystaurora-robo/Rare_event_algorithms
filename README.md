@@ -140,6 +140,19 @@ The final aim of this study is to observe transitions back to the on state by tu
 
 The trajectory path is again computed from the off state to the on state, shown below. 
 
+To Do: 
+1. Still find transitions back to the on state
+2. Verify agg label
+3. Make comparable plots with salinity-driven transitions vs AMOC in the same data
+4. Edit presentation on how to figure out k (intro slides, bifurcation diagram, equations)
+5. change the way that titles are written
+6. Cut simulations so k is active for the same length of time for each one - to compare
+7. compare ensemble size and k with each experiment - edit table, make each graph easily comparable
+8. check targeted anomaly and add to presentation/titles/organize graphs
+9. read more about taking average while considering importance sampling
+10. Remove EWI bit - but variance is interesting, check Ashwin papers for EWI using variance (or other EWI for noise-induced transitions)
+11. Create two side by side plots of instanton
+
 # References:
 
 1. (F. Ragone, personal communication, 2025)
