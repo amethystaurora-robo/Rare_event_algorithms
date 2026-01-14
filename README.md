@@ -141,7 +141,7 @@ The final aim of this study is to observe transitions back to the on state by tu
 The trajectory path is again computed from the off state to the on state, shown below. 
 
 To Do: 
-1. Still find transitions back to the on state
+1. Still find transitions back to the on state (first re-doing AMOC on->off since it was overwritten)
 2. Verify agg label
 3. Make comparable plots with salinity-driven transitions vs AMOC in the same data
 4. Edit presentation on how to figure out k (intro slides, bifurcation diagram, equations)
