@@ -152,6 +152,7 @@ To Do:
 9. read more about taking average while considering importance sampling
 10. Remove EWI bit - but variance is interesting, check Ashwin papers for EWI using variance (or other EWI for noise-induced transitions)
 11. Create two side by side plots of instanton
+12. Do more calculations for importance sampling
 
 # References:
 
