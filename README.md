@@ -150,7 +150,7 @@ To Do:
 7. compare ensemble size and k with each experiment - edit table, make each graph easily comparable
 8. check targeted anomaly and add to presentation/titles/organize graphs
 9. read more about taking average while considering importance sampling
-10. Remove EWI bit - but variance is interesting, check Ashwin papers for EWI using variance (or other EWI for noise-induced transitions)
+10. Remove EWI bit - but variance is interesting, check Ashwin papers for EWI using variance (or other EWI for noise-induced transitions) - variance will probably increase because we are forcing it to increase
 11. Create two side by side plots of instanton
 12. Do more calculations for importance sampling
 
