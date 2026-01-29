@@ -154,7 +154,7 @@ To Do:
 11. Create two side by side plots of instanton
 12. Do more calculations for importance sampling
 
-Working on coomparable plots of salinity and AMOC (and temperature) with target values of 30 standard deviations above/below mean.
+Working on coomparable plots of salinity and AMOC (and temperature) with target values of 30 standard deviations above/below mean. Then do importance sampling analysis.
 
 # References:
 
