@@ -99,7 +99,7 @@ Following the table above, simulations were run to target the off state of the A
   <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/salinity_shifts/salinity_lineplot_40year_1000traj_9000k.png" width="400">
 </p>
 
-When applying the rare event sampling to temperature, no transitions were observed for either of the two ensemble sizes or the three values of k selected. Below it is shown that when rare event sampling is applied to the salinity state variable and the system shifts to the AMOC off state, temperature transitions along with salinity to a higher value rather than a lower one, as expected.
+When applying the rare event sampling to temperature, no transitions were observed for either of the two ensemble sizes or the three values of k selected. Below it is shown that when rare event sampling is applied to the salinity state variable and the system shifts to the AMOC off state, temperature transitions along with salinity to a higher value rather than a lower one, as expected. Temperature is shown below in green, and salinity in purple. 
 
 <p>
   <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/salinity_shifts/salinity_temperature_lineplot_40year_200traj_7000k.png" width="400">
@@ -107,7 +107,7 @@ When applying the rare event sampling to temperature, no transitions were observ
   <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/salinity_shifts/salinity_temperature_lineplot_40year_200traj_9000k.png" width="400">
 </p>
 
-
+This result confirms that both an increase in temperature and in salinity are pushing the AMOC into the off state, rather than an increase in salinity and decrease in temperature. Once the transitions have occurred, the system ought to be able to return to the on state by applying rare event sampling in the opposite direction. However, equal forcing in the opposite direction (30 standard deviations above the mean) did not result in transitions back to the on state for either the AMOC or salinity, regardless of either ensemble size chosen. (Fix this, is it actually 30 standard deviations above the off state mean ???)
 
 It was interesting to observe whether the transition has an instanton - a least unlikely path between states. Below the transition paths between salinity on/off and AMOC on/off are compared. It is clear that they take the same path. The first plot below compares on and off states as they transition through time. The second plot denotes possible attractors by using a time cutoff using the line graphs for both transition states. 
 
