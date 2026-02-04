@@ -38,7 +38,7 @@ The algorithm used is a cloning algorithm, where trajectories are given weights 
   <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/control_hist.png" width="500">
 </p>
 
-2. A rare event, a, is at the tail of the distribution, 3 standard deviations below the mean. Return times of all values of a are computed and shown below:
+2. A rare event, a, is at the tail of the distribution, 30 standard deviations below the mean. Return times of all values of a are computed and shown below:
 <p>
   <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/returntimes_control.png" width="500">
 </p>
@@ -60,11 +60,24 @@ The algorithm used is a cloning algorithm, where trajectories are given weights 
   <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/weights.png" width="500">
 </p>
 6. Trajectories with weights near zero are killed and those with higher weights are cloned proportionally to their weight (keeping the same
-   number of trajectories overall). The killed trajectories take on the values of the cloned ones, with slight perturbations, the simulation is run again, and the process repeats. 
+   number of trajectories overall). The killed trajectories take on the values of the cloned ones, with slight perturbations, the simulation is run again, and the process repeats. The weighting is applied to state variables AMOC Index, Salinity, and Temperature separately to allow for transitions based on each state variable. 
 
 # Results
 
-Below, 200 trajectories are simulated for 16 or 20 years (denoted in the plot titles). With k<-200, transitions occur around year 10. Trajectories are tracked to confirm the original ancestor of final shifted trajectories. Below, degeneracy of trajectories are shown: all shifted trajectories evolve from one common ancestor. This problem may be solved by initializing more trajectories.
+The anomaly which was targeted in these experiments was 30 standard deviations below the mean. This allowed rare event sampling applied to one state variable to push the system into the alternate system state. Below is the equation used to find the value of k, the parameter which shifts the distribution of the ensemble.
+
+k = a/(τ/σ²)
+
+where a is the anomaly targeted and τ is the integral auto-correlation time. 
+
+| State Variable | Anomaly Target | Resulting *k* Value | *k* Values to Try               |
+|----------------|----------------|---------------------|---------------------------------|
+| AMOC           | μ − 30σ         | -1744               | Try: -500, -1000, -2000          |
+| Salinity       | μ − 30σ         | 8282                | Try: 7000, 8000, 9000            |
+| Temperature    | μ − 30σ         | -4686               | Try: -40000, -50000, -60000      |
+
+Following the table above, simulations were run to target the off state of the AMOC by applying rare event sampling to each of the three state variables described. Below is a systematic comparison of the resulting time series, followed by a barcode plot which shows the ancestors spawning the shifted trajectories:
+
 <p>
   <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/plots/lineplot_20year_200traj_-3000k.png" width="400">
   <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/plots/lineplot_20year_200traj_-2000k.png" width="400">
@@ -82,35 +95,6 @@ I confirm that Importance Sampling has worked because my distribution of values 
   <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/hist_shifted_values.png" width="500"
 </p>
 
-After observing transitions to the AMOC off state, it was interesting to investigate whether changing k=0 (effectively turning off the Rare Event algorithm) would allow for spontaneous transitions back to the on state. Below, it is shown that this did not occur in a 100-year simulation.
-
-<p>
-  <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/plots/lineplot_22year_200traj_0k.png" width="400">
-  <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/plots/barcode_22year_200traj_0k.png" width="400">
-</p>
-
-It was also interesting to investigate whether transitions would be observed when forcing only Temperature or Salinity with the Rare Event algorithm. Using the bifurcation diagram below, k was calculated to target the AMOC off state for both temperature and salinity, with values of 0.55 and 0.4, respectively.
-
-<p>
-  <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/bifurcation.png" width="500">
-</p>
-(Mehling et al, 2024)
-
-For salinity, a k value of 3000 is calculated using the targeted value. After some trial and error, a transition between two states was observed with a k value of 5000.
-
-<p>
-  <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/plots/lineplot_30year_200traj_5000k.png" width="400">
-  <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/plots/barcode_30year_200traj_5000k.png" width="400">
-</p>
-
-An attempt was made to solve degeneracy of trajectories by increasing the number of trajectories used in the rare event algorithm from 200 to 1000. Below, it is shown that with the same values of k, degeneracy is still a problem for both AMOC and salinity.
-
-<p>
-  <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/plots/amoc_lineplot_20year_1000traj_0k.png" width="400">
-  <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/plots/amoc_barcode_20year_1000traj_0k.png" width="400">
-  <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/plots/salinity_lineplot_20year_1000traj_0k.png" width="400">
-  <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/plots/salinity_barcode_20year_1000traj_0k.png" width="400">
-</p>
 
 It was interesting to observe whether the transition has an instanton - a least unlikely path between states. Below the transition paths between salinity on/off and AMOC on/off are compared. It is clear that they take the same path. The first plot below compares on and off states as they transition through time. The second plot denotes possible attractors by using a time cutoff using the line graphs for both transition states. 
 
@@ -140,19 +124,6 @@ The final aim of this study is to observe transitions back to the on state by tu
 
 The trajectory path is again computed from the off state to the on state, shown below. 
 
-To Do: 
-1. Still find transitions back to the on state (first re-doing AMOC on->off since it was overwritten), comparable simulations, if it doesn't work it doesn't work
-2. Verify agg label (explanation: basically, there are 200 trajectory lines which are following their original unit labels, so although the trajectories shift as they are killed and cloned from another trajectory number, that shift is shown as the same line, changing color to reflect the new ancestor. The problem of plotting this in another way is the number of lines are reduced, showing only one line as an average of all trajectories, even though there are still 200 trajectories.)
-3. Make comparable plots with salinity-driven transitions vs AMOC in the same data
-4. Edit presentation on how to figure out k (intro slides, bifurcation diagram, equations)
-5. change the way that titles are written
-6. Cut simulations so k is active for the same length of time for each one - to compare
-7. compare ensemble size and k with each experiment - edit table, make each graph easily comparable
-8. check targeted anomaly and add to presentation/titles/organize graphs
-9. read more about taking average while considering importance sampling
-10. Remove EWI bit - but variance is interesting, check Ashwin papers for EWI using variance (or other EWI for noise-induced transitions) - variance will probably increase because we are forcing it to increase
-11. Create two side by side plots of instanton
-12. Do more calculations for importance sampling
 
 Working on coomparable plots of salinity and AMOC (and temperature) with target values of 30 standard deviations above/below mean. Then do importance sampling analysis. Can make agg label plots for all, edit plots so salinitya and AMOC are side-by-side, instanton are side by side. Change titles, make graphs, finish up presentation and GitHub, then can do poster.
 
