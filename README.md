@@ -74,7 +74,13 @@ where a is the anomaly targeted and τ is the integral auto-correlation time.
 |----------------|----------------|---------------------|---------------------------------|
 | AMOC           | μ − 30σ         | -1744               | Try: -500, -1000, -2000          |
 | Salinity       | μ − 30σ         | 8282                | Try: 7000, 8000, 9000            |
-| Temperature    | μ − 30σ         | -4686               | Try: -40000, -50000, -60000      |
+| Temperature    | μ − 30σ         | -46866              | Try: -40000, -50000, -60000      |
+
+Rare event sampling applied to the state variables results in a shift of the distribution of values of state variables, as shown below, for AMOC. 
+
+<p>
+  <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/hist_shifted_values.png" width="500"
+</p>
 
 Following the table above, simulations were run to target the off state of the AMOC by applying rare event sampling to each of the three state variables described. Each of the simulations was attempted with ensembles of 200 trajectories and 1000 trajectories. Below is a systematic comparison of the resulting time series, colored by the "ancestors" spawning the shifted trajectories:
 
@@ -93,11 +99,14 @@ Following the table above, simulations were run to target the off state of the A
   <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/salinity_shifts/salinity_lineplot_40year_1000traj_9000k.png" width="400">
 </p>
 
-I confirm that Importance Sampling has worked because my distribution of values after the transition has changed.
+When applying the rare event sampling to temperature, no transitions were observed for either of the two ensemble sizes or the three values of k selected. Below it is shown that when rare event sampling is applied to the salinity state variable and the system shifts to the AMOC off state, temperature transitions along with salinity to a higher value rather than a lower one, as expected.
 
 <p>
-  <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/hist_shifted_values.png" width="500"
+  <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/salinity_shifts/salinity_temperature_lineplot_40year_200traj_7000k.png" width="400">
+  <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/salinity_shifts/salinity_temperature_lineplot_40year_200traj_8000k.png" width="400">
+  <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/salinity_shifts/salinity_temperature_lineplot_40year_200traj_9000k.png" width="400">
 </p>
+
 
 
 It was interesting to observe whether the transition has an instanton - a least unlikely path between states. Below the transition paths between salinity on/off and AMOC on/off are compared. It is clear that they take the same path. The first plot below compares on and off states as they transition through time. The second plot denotes possible attractors by using a time cutoff using the line graphs for both transition states. 
