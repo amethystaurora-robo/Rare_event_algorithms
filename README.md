@@ -107,33 +107,16 @@ When applying the rare event sampling to temperature, no transitions were observ
   <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/salinity_shifts/salinity_temperature_lineplot_40year_200traj_9000k.png" width="400">
 </p>
 
-This result confirms that both an increase in temperature and in salinity are pushing the AMOC into the off state, rather than an increase in salinity and decrease in temperature. Once the transitions have occurred, the system ought to be able to return to the on state by applying rare event sampling in the opposite direction. However, equal forcing in the opposite direction (30 standard deviations above the mean) did not result in transitions back to the on state for either the AMOC or salinity, regardless of either ensemble size chosen. (Fix this, is it actually 30 standard deviations above the off state mean ???)
+This result confirms that both an increase in temperature and in salinity are pushing the AMOC into the off state, rather than an increase in salinity and decrease in temperature. Once the transitions have occurred, the system ought to be able to return to the on state by applying rare event sampling in the opposite direction. However, equal forcing in the opposite direction (30 standard deviations above the mean) did not result in transitions back to the on state for either the AMOC or salinity, regardless of either ensemble size chosen. (Fix this, is it actually 30 standard deviations above the off state mean ???) Will check more, running simulations now.
 
-It was interesting to observe whether the transition has an instanton - a least unlikely path between states. Below the transition paths between salinity on/off and AMOC on/off are compared. It is clear that they take the same path. The first plot below compares on and off states as they transition through time. The second plot denotes possible attractors by using a time cutoff using the line graphs for both transition states. 
+It was interesting to observe whether the transition has an instanton - a least unlikely path between states. Below the transition paths of state variables are compared when rare event sampling is applied to AMOC and to salinity. It is clear that they take the same path. The first plot below compares on and off states as they transition through time. The second plot denotes possible attractors by using a time cutoff using the line graphs for both transition states. The plots are shown side by side to compare the transition pathways. The presence of an instanton can help with early warning indication, as a trajectory headed towards the instanton path is likely headed towards collapse. The next step of analysis in this study is to compare the distribution of pathways that trajectories take during the simulations. The instanton should be exponentially more likely than other paths in trajectories that transition to the off state. 
 
 <p>
   <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/transition_2D_time.png" width="400">
   <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/transition_2D_state.png" width="400">
 </p>
 
-Since the final aim of this project is to develop Early Warning Systems, it was also interesting to investigate whether common Early Warning Signals, including an increase of variance of state variables and an increase in auto-correlation were observed prior to the transition paths for both forcing in AMOC and salinity. 
 
-<p>
-  <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/acfunc_Salinity RE Forcing_Salinity.png" width="400">
-  <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/acfunc_AMOC RE Forcing_Salinity.png" width="400">
-  <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/variance_Salinity RE Forcing_Temperature.png" width="400">
-  <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/variance_AMOC RE Forcing_Salinity.png" width="400">
-  <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/variance_Salinity RE Forcing_Salinity.png" width="400">
-  <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/variance_AMOC RE Forcing_Temperature.png" width="400">
-</p>
-
-Above an increase of variance can be observed for both temperature and salinity prior to transitions in both systems forced with RE sampling. An increase of auto-correlation was not observed for either transition. Atmospheric variables x,y, and z showed fluctuations and no clear trend for either auto-correlation or variance. 
-
-The final aim of this study is to observe transitions back to the on state by turning the RE algorithm back on with opposite forcing (changing the sign of k). In the case of the AMOC, a transition was observed back to the on state shown below:
-
-<p>
-  <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/plots/amoc_lineplot_30year_200traj_1500k.png" width="400">
-</p>
 
 The trajectory path is again computed from the off state to the on state, shown below. 
 
