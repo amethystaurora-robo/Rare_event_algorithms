@@ -121,7 +121,9 @@ It was interesting to observe whether the transition has an instanton - a least 
 The trajectory path is again computed from the off state to the on state, shown below. 
 
 
-Working on coomparable plots of salinity and AMOC (and temperature) with target values of 30 standard deviations above/below mean. Then do importance sampling analysis. Can make agg label plots for all, edit plots so salinitya and AMOC are side-by-side, instanton are side by side. Change titles, make graphs, finish up presentation and GitHub, then can do poster.
+Working on coomparable plots of salinity and AMOC (and temperature) with target values of 30 standard deviations above/below mean. Then do importance sampling analysis. Can make agg label plots for all, edit plots so salinity and AMOC are side-by-side, instanton are side by side. Change titles, make graphs, finish up presentation and GitHub, then can do poster.
+
+Change plots to show that temperature fluctuates up when salinity transitions, and when AMOC transitions. Add 6 more plots of return to on state, if it transitions, do instanton, if not, we done.
 
 # References:
 
