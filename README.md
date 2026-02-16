@@ -123,7 +123,7 @@ The trajectory path is again computed from the off state to the on state, shown 
 
 Working on coomparable plots of salinity and AMOC (and temperature) with target values of 30 standard deviations above/below mean. Then do importance sampling analysis. Can make agg label plots for all, edit plots so salinity and AMOC are side-by-side, instanton are side by side. Change titles, make graphs, finish up presentation and GitHub, then can do poster.
 
-Change plots to show that temperature fluctuates up when salinity transitions, and when AMOC transitions. Add 6 more plots of return to on state, after setting to equilibrium state-try now to run 100 years.
+Change plots to show that temperature fluctuates up when salinity transitions, and when AMOC transitions. Add 6 more plots of return to on state, after setting to equilibrium state-try now to run 100 years..didn't work for 40 years. If it doesn't look like it's working to go back, that in itself can be an interesting result, and can try to look at the graph of the potential in that case after it ahs transitioned.
 
 # References:
 
