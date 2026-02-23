@@ -119,7 +119,7 @@ It was interesting to observe whether the transition has an instanton - a least 
 
 
 
-Working on coomparable plots of salinity and AMOC (and temperature) with target values of 30 standard deviations above/below mean. Then do importance sampling analysis. Can make agg label plots for all, edit plots so salinity and AMOC are side-by-side, instanton are side by side. Change titles, make graphs, finish up presentation and GitHub
+Working on coomparable plots of salinity and AMOC (and temperature) with target values of 30 standard deviations above/below mean. Then do importance sampling analysis. Can make agg label plots for all, edit plots so salinity and AMOC are side-by-side, instanton are side by side. Finally can investigate initial conditions to determine what combination of factors may lead to collapse.
 
 
 # References:
