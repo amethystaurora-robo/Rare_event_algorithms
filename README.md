@@ -14,7 +14,7 @@ See more:
 
 ## Rare Event Algorithm
 
-An algorithm applied to a distribution of values with rare events, a, at the tail of the distribution-enabling the distribution to shift and increase the number of rare events, making the events common.
+In this bi-stable system, the fast atmosphere is coupled with the slow ocean, and the coupling term allows the atmosphere to act as noise, allowing for noise-induced transitions from one state to another. However, these noise-induced transitions occur only rarely, requiring an untenable number of simulation hours and computational power. As a solution, an algorithm which 'encourages' rare events, by shifting the distribution of values in an ensemble of trajectories to a threshold somewhere in the tail of the original distribution increases the number of rare events observed, allowing for statistical analysis of the transitions in these experiments.
 
 <p>
   <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/importance_sampling.png" width="500">
@@ -108,9 +108,9 @@ TODO: Instead of this compare with AMOC, to see temperature rise.
   <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/salinity_shifts/salinity_temperature_lineplot_40year_200traj_9000k.png" width="400">
 </p>
 
-This result confirms that both an increase in temperature and in salinity are pushing the AMOC into the off state, rather than an increase in salinity and decrease in temperature. Once the transitions have occurred, the system ought to be able to return to the on state by applying rare event sampling in the opposite direction. However, equal forcing in the opposite direction (30 standard deviations above the mean) did not result in transitions back to the on state for either the AMOC or salinity, regardless of ensemble size chosen (200 or 1000 trajectories), and length of simulation (testing was done for 40 years and 100 years after reaching an equilibrium state.)
+This result confirms that transitions occur in systems where salinity increases, and where temperature increases, at least initially. Once the transitions have occurred, the system ought to be able to return to the on state by applying rare event sampling in the opposite direction. However, equal forcing in the opposite direction (30 standard deviations above the mean) did not result in transitions back to the on state for either the AMOC or salinity, regardless of ensemble size chosen (200 or 1000 trajectories), and length of simulation (testing was done for 40 years and 100 years after reaching an equilibrium state.) This may mean one of several reasons, and would be an interesting choice of further investigation.
 
-It was interesting to observe whether the transition has an instanton - a least unlikely path between states. Below the transition paths of state variables are compared when rare event sampling is applied to AMOC and to salinity. It is clear that they take the same path. The first plot below compares on and off states as they transition through time. The second plot denotes possible attractors by using a time cutoff using the line graphs for both transition states. The plots are shown side by side to compare the transition pathways. The presence of an instanton can help with early warning indication, as a trajectory headed towards the instanton path is likely headed towards collapse, given the exponential likelihood that the state variables will make a transition to a collapsed state along the instanton. The next step of analysis in this study is to compare the distribution of pathways that trajectories take during the simulations. The instanton should be exponentially more likely than other paths in trajectories that transition to the off state. 
+The final aim of this experiment was to develop an early warning indicator for transitions in this system. In the case of noise-induced transitions, an early warning may be that a trajectory tends toward the one path it always takes in collapse-the instanton. The instanton is defined by being the 'least unlikely' transition path between two stable states. Although any transition path is unlikely, the instanton will be exponentially more likely than any other. Below each of the experiments is shown along their shifted path, where the existence of an instanton is confirmed. 
 
 <p>
   <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/transition_2D_time.png" width="400">
@@ -118,8 +118,7 @@ It was interesting to observe whether the transition has an instanton - a least 
 </p>
 
 
-
-Working on coomparable plots of salinity and AMOC (and temperature) with target values of 30 standard deviations above/below mean. Then do importance sampling analysis. Can make agg label plots for all, edit plots so salinity and AMOC are side-by-side, instanton are side by side. Finally can investigate initial conditions to determine what combination of factors may lead to collapse.
+do importance sampling analysis. Can make agg label plots for all, edit plots so salinity and AMOC are side-by-side, instanton are side by side. Can also redo instanton so it is aggregated from all the transition plots. Finally can investigate initial conditions to determine what combination of factors may lead to collapse.
 
 
 # References:
