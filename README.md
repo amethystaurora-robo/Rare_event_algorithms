@@ -82,7 +82,7 @@ Rare event sampling applied to the state variables results in a shift of the dis
   <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/hist_shifted_values.png" width="500"
 </p>
 
-Following the table above, simulations were run to target the off state of the AMOC by applying rare event sampling to each of the three state variables described. Each of the simulations was attempted with ensembles of 200 trajectories and 1000 trajectories. Below is a systematic comparison of the resulting time series, colored by the "ancestors" spawning the shifted trajectories:
+Following the table above, a rare event algorithm was applied to each of the three state variables described in ensembles of simulated trajectories targetting the AMOC off state. Above is a comparison between simulations with 200 and 1000 ensemble members. Below is a systematic comparison of the resulting time series, colored by the "ancestors" spawning the shifted trajectories:
 
 <p>
   <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/AMOC_shifts/temp_lineplot_40year_200traj_-500k.png" width="400">
