@@ -119,7 +119,7 @@ Should explain model a bit more? I think slides are ok for now- can look at note
 Explain more how auto-correlation works, how it relates to the equation to find k, the anomaly, etc. Maybe show the equation first
 Importance sampling - explanaton and how degeneracy of trajectories kinda ruins it - would need 10^5 trajs to make it worthwhile.
 edit plots so salinity and AMOC are side-by-side, instanton are side by side. 
-Finally can investigate initial conditions to determine what combination of factors may lead to collapse.
+Finally can investigate initial conditions to determine what combination of factors may lead to collapse-in this toy model it is high salinity so forget this too.
 Will finish slides also
 
 
