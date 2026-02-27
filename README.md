@@ -114,8 +114,13 @@ The final aim of this experiment was to develop an early warning indicator for t
   <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/transition_2D_state.png" width="400">
 </p>
 
-
-do importance sampling analysis, and have plot and explanation. edit plots so salinity and AMOC are side-by-side, instanton are side by side. Finally can investigate initial conditions to determine what combination of factors may lead to collapse...
+TO DO:
+Should explain model a bit more? I think slides are ok for now- can look at notes on progress report outline and follow that - physics of oceanic ciculation, what is a climate model, intro to tipping points, intro to re algorithm, applications in Gottwald model, discuss instanton, (skip PLASIM obviously), figures, summary, future directions
+Explain more how auto-correlation works, how it relates to the equation to find k, the anomaly, etc. Maybe show the equation first
+have plot and explanation for importance sampling analysis.
+edit plots so salinity and AMOC are side-by-side, instanton are side by side. 
+Finally can investigate initial conditions to determine what combination of factors may lead to collapse.
+Will finish slides also
 
 
 # References:
