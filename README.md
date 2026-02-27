@@ -39,9 +39,6 @@ The algorithm used is a cloning algorithm, where trajectories are given weights 
 </p>
 
 2. A rare event, a, is at the tail of the distribution, 30 standard deviations below the mean. Return times of all values of a are computed and shown below:
-<p>
-  <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/returntimes_control.png" width="500">
-</p>
 
 3. The auto-correlation function is determined by finding correlations between an AMOC index and itself at lag. This shows the system memory over time, and is used to determine resampling time for the rare event algorithm, by computing the integral auto-correlation time. 
 <p>
@@ -118,7 +115,7 @@ The final aim of this experiment was to develop an early warning indicator for t
 </p>
 
 
-do importance sampling analysis, and have plot and explanation. Delete return time stuff. edit plots so salinity and AMOC are side-by-side, instanton are side by side. Can also redo instanton so it is aggregated from all the transition plots. Finally can investigate initial conditions to determine what combination of factors may lead to collapse...
+do importance sampling analysis, and have plot and explanation. edit plots so salinity and AMOC are side-by-side, instanton are side by side. Finally can investigate initial conditions to determine what combination of factors may lead to collapse...
 
 
 # References:
