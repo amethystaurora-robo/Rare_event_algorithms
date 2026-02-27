@@ -118,7 +118,7 @@ The final aim of this experiment was to develop an early warning indicator for t
 </p>
 
 
-do importance sampling analysis. Can make agg label plots for all, edit plots so salinity and AMOC are side-by-side, instanton are side by side. Can also redo instanton so it is aggregated from all the transition plots. Finally can investigate initial conditions to determine what combination of factors may lead to collapse...
+do importance sampling analysis, and have plot and explanation. Delete return time stuff. edit plots so salinity and AMOC are side-by-side, instanton are side by side. Can also redo instanton so it is aggregated from all the transition plots. Finally can investigate initial conditions to determine what combination of factors may lead to collapse...
 
 
 # References:
