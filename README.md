@@ -14,7 +14,7 @@ See more:
 
 ## Rare Event Algorithm
 
-In this bi-stable system, the fast atmosphere is coupled with the slow ocean, and the coupling term allows the atmosphere to act as noise, allowing for noise-induced transitions from one state to another. However, these noise-induced transitions occur only rarely, requiring an untenable number of simulation hours and computational power. As a solution, an algorithm which 'encourages' rare events, by shifting the distribution of values in an ensemble of trajectories to a threshold somewhere in the tail of the original distribution increases the number of rare events observed, allowing for statistical analysis of the transitions in these experiments.
+In this multi-stable system, a fast atmosphere uses a coupling term with the slower ocean, allowing for noise-induced transitions from one state to another. However, these noise-induced transitions occur only rarely, requiring an untenable number of simulation hours and computational power. As a solution, an algorithm which 'encourages' rare events, by shifting the distribution of values in an ensemble of trajectories to a threshold somewhere in the tail of the original distribution increases the number of rare events observed, allowing for statistical analysis of the transitions in these experiments.
 
 <p>
   <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/importance_sampling.png" width="500">
