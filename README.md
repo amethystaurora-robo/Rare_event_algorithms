@@ -70,7 +70,7 @@ where a is the anomaly targeted and τ is the integral auto-correlation time.
 | State Variable | Anomaly Target | Resulting *k* Value | *k* Values to Try               |
 |----------------|----------------|---------------------|---------------------------------|
 | AMOC           | μ − 30σ         | -1744               | Try: -500, -1000, -2000          |
-| Salinity       | μ − 30σ         | 8282                | Try: 7000, 8000, 9000            |
+| Salinity       | μ + 30σ         | 8282                | Try: 7000, 8000, 9000            |
 | Temperature    | μ − 30σ         | -46866              | Try: -40000, -50000, -60000      |
 
 Rare event sampling applied to the state variables results in a shift of the distribution of values of state variables, as shown below, for AMOC. 
