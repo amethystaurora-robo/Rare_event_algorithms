@@ -2,6 +2,26 @@
 
 ## Climate Tipping Points
 
+Many climate systems exhibit multi-stability, meaning their dynamics can shift between multiple equilibrium states. In the simplified diagram below of the potential landscape of a system, a 1-dimensional system is shown with two wells, which represent the equilibrium states of the system. The ball is the current state of the system, and it can pass between the two equilibria by passing the tipping point in different ways.
+<p>
+  <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/pic5.png" width="500" >
+</p>
+#TODO: Cite these
+A few examples of climate systems which have undergone these critical transitions in the past are:
+- the Earth from a warm state to a 'Snowball Earth'
+- The greening of the Sahara Desert
+- ice-covered Arctic to ice-free Arctic
+<p>
+  <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/pic6.png" >
+</p>
+
+This project is looking at the Atlantic Meridional Overturning Circulation (AMOC), which is a current in the Atlantic ocean that carries warm, salty water northward, where it cools, expands and sinks, circulating back southward in the lower branch of this 'conveyor belt'. The transport of heat provided by the AMOC is largely what keeps European climate mild. In a weakened or collapsed AMOC state (its alternate stable state), the average temperature of the Northern Hemisphere would be lower, and the Inter-tropical Convergence Zone (ITCZ), may move southward, moving the equatorial rain belt southward.
+
+This has implications, termed 'cascading tipping points', where it has been posited that the following sequence of events can happen:
+1. Greenland + the West Antarctic Ice Sheet shift into their alternate regime - an ice free state.
+2. The influx of freshwater into the Atlantic weakens or collapses the AMOC into its alternate state
+3. The collapse of the AMOC shifts the equatorial rainbelt southward, causing drying of the Amazon rainforest and shifting it into a more savanna-like state. 
+
 
 ## Models
 
