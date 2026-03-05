@@ -9,9 +9,9 @@ Many climate systems exhibit multi-stability, meaning their dynamics can shift b
 
 # TODO: Cite these
 A few examples of climate systems which have undergone these critical transitions in the past are:
-##### the Earth from a warm state to a 'Snowball Earth'
-##### The greening of the Sahara Desert
-##### ice-covered Arctic to ice-free Arctic
+* the Earth from a warm state to a 'Snowball Earth'
+* The greening of the Sahara Desert
+* ice-covered Arctic to ice-free Arctic
 
 <p>
   <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/pic6.png" width="600">
@@ -31,6 +31,11 @@ This has implications, termed 'cascading tipping points', where it has been posi
 
 ## Models
 
+This project uses climate models to simulate the dynamics of the AMOC. 
+The 2-box Stommel oceanic model assumes that the ocean is split into a North and South box, each with state variables temperature and salinity. The differences of temperature and salinity control the flow, and can effectively simulate a simplified AMOC.
+The Gottwald atmospheric model combines three state variables to give a deterministic system with chaotic dynamics.
+The coupling of these two models into the Gottwald model, allows for the creation of a fast-slow system, where noise-induced transitions can occur.
+Unlike transitions from external forcing (like freshwater forcing mentioned above in the melting of Greenland and West Antarctic ice sheets), noise-induced transitions occur from a system's own internal variability. 
 A coupled model of the simplified ocean from Stommel and the Lorenz-84 atmosphere. 
 <p>
 See more:
