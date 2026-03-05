@@ -1,7 +1,9 @@
-
-
 # Introduction
-## Gottwald model
+
+## Climate Tipping Points
+
+
+## Models
 
 A coupled model of the simplified ocean from Stommel and the Lorenz-84 atmosphere. 
 <p>
