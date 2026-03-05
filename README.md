@@ -29,7 +29,7 @@ This has implications, termed 'cascading tipping points', where it has been posi
 3. The collapse of the AMOC shifts the equatorial rainbelt southward, causing drying of the Amazon rainforest and shifting it into a more savanna-like state. 
 
 <p>
-  <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/pic7.png" >
+  <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/pic7.png" width="500">
 </p>
 
 ## Models
@@ -37,20 +37,20 @@ This has implications, termed 'cascading tipping points', where it has been posi
 This project uses climate models to simulate the dynamics of the AMOC. 
 
 <p>
-  <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/pic9.png" >
+  <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/pic9.png" width="500">
 </p>
 #ALSO CITE THE MODELS (3 citations)
 The 2-box Stommel oceanic model assumes that the ocean is split into a North and South box, each with state variables temperature and salinity. The differences of temperature and salinity control the flow, and can effectively simulate a simplified AMOC.
 
 <p>
-  <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/pic10.png" >
+  <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/pic10.png" width="500">
 </p>
 
 The Lorenz atmospheric model combines three state variables to give a deterministic system with chaotic dynamics.
 
 The coupling of these two models into the Gottwald model, allows for the creation of a fast-slow system, where the fast and chaotic dynamics of the atmosphere act as noise on the slower, more resilient, ocean.
 <p>
-  <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/pic11.png" >
+  <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/pic11.png" width="500">
 </p>
 A series of these little kicks in exactly the right order may be able to push the state of the system to a new equilibrium.
 Unlike transitions from external forcing (like freshwater forcing mentioned above in the melting of Greenland and West Antarctic ice sheets), noise-induced transitions occur from a system's own internal variability. However, these noise-induced transitions occur only very rarely, so a rare event algorithm is applied to sample more of these rare events.
