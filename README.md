@@ -57,7 +57,7 @@ Unlike transitions from external forcing (like freshwater forcing mentioned abov
 
 ## Rare Event Algorithm
 
-An algorithm which 'encourages' rare events, by shifting the distribution of values in an ensemble of trajectories to a threshold somewhere in the tail of the original distribution increases the number of rare events observed, allowing for statistical analysis of the transitions in these experiments.
+These rare events exist in the tail of the distribution of state variables under normal dynamics. The rare event algorithm shifts the distribution of the events, allowing the rare event to become more common.
 
 <p>
   <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/importance_sampling.png" width="500">
@@ -73,15 +73,11 @@ The algorithm used is a cloning algorithm, where trajectories are given weights 
 
 # Methods
 
-1. A control run of the Gottwald model is initiated with initial conditions leading to the stable attractor. The time series and distribution of AMOC indices is shown below:
+1. A control run of the Gottwald model is initiated with initial conditions leading to the stable attractor. The time series is shown below:
 <p>
   <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/timeseries_controlrun.png" width="500">
 </p>
-<p>
-  <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/control_hist.png" width="500">
-</p>
 
-2. A rare event, a, is at the tail of the distribution, 30 standard deviations below the mean. Return times of all values of a are computed and shown below:
 
 3. The auto-correlation function is determined by finding correlations between an AMOC index and itself at lag. This shows the system memory over time, and is used to determine resampling time for the rare event algorithm, by computing the integral auto-correlation time. 
 <p>
@@ -119,7 +115,7 @@ where a is the anomaly targeted and τ is the integral auto-correlation time.
 Rare event sampling applied to the state variables results in a shift of the distribution of values of state variables, as shown below, for AMOC. 
 
 <p>
-  <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/hist_shifted_values.png" width="500"
+  <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/hist_shifted_values.png" width="500">
 </p>
 
 Following the table above, a rare event algorithm was applied to each of the three state variables described in ensembles of simulated trajectories targetting the AMOC off state. Above is a comparison between simulations with 200 and 1000 ensemble members. Below is a systematic comparison of the resulting time series, colored by the "ancestors" spawning the shifted trajectories:
@@ -148,23 +144,14 @@ TODO: Instead of this compare with AMOC, to see temperature rise.
   <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/salinity_shifts/salinity_temperature_lineplot_40year_200traj_9000k.png" width="400">
 </p>
 
-This result confirms that transitions occur in systems where salinity increases, and where temperature increases, at least initially. Once the transitions have occurred, the system ought to be able to return to the on state by applying rare event sampling in the opposite direction. However, equal forcing in the opposite direction (30 standard deviations above the mean) did not result in transitions back to the on state for either the AMOC or salinity, regardless of ensemble size chosen (200 or 1000 trajectories), and length of simulation (testing was done for 40 years and 100 years after reaching an equilibrium state.) This may mean one of several reasons, and would be an interesting choice of further investigation.
+This result confirms that transitions occur in systems where salinity increases, and where temperature increases, at least initially. Once the transitions have occurred, the system ought to be able to return to the on state by applying rare event sampling in the opposite direction. However, equal forcing in the opposite direction (30 standard deviations above the mean) did not result in transitions back to the on state for either the AMOC or salinity, regardless of ensemble size chosen (200 or 1000 trajectories), and length of simulation (testing was done for 40 years and 100 years after reaching an equilibrium state.) This merits further investigation into the potential landscape of the system.
 
-The final aim of this experiment was to develop an early warning indicator for transitions in this system. In the case of noise-induced transitions, an early warning may be that a trajectory tends toward the one path it always takes in collapse-the instanton. The instanton is defined by being the 'least unlikely' transition path between two stable states. Although any transition path is unlikely, the instanton will be exponentially more likely than any other. Below each of the experiments is shown along their shifted path, where the existence of an instanton is confirmed. 
+The final aim of this experiment was to develop an early warning indicator for transitions in this system. In the case of noise-induced transitions, there are many paths to collapse. However, there may exist an instanton, a transition path which is exponentially more likely than the others. Below, the path of transition with the rare event algorithm applied to AMOC and applied to salinity is shown, overlapping. This hints at the existence of an instanton in this model, but a mathematical proof would be required to verify this result.
 
 <p>
   <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/transition_2D_time.png" width="400">
   <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/transition_2D_state.png" width="400">
 </p>
-
-TO DO:
-Should explain model a bit more? I think slides are ok for now- can look at notes on progress report outline and follow that - physics of oceanic ciculation, what is a climate model, intro to tipping points, intro to re algorithm, applications in Gottwald model, discuss instanton, (skip PLASIM obviously), figures, summary, future directions
-Explain more how auto-correlation works, how it relates to the equation to find k, the anomaly, etc. Maybe show the equation first
-Importance sampling - explanaton and how degeneracy of trajectories kinda ruins it - would need 10^5 trajs to make it worthwhile.
-edit plots so salinity and AMOC are side-by-side, instanton are side by side. 
-Finally can investigate initial conditions to determine what combination of factors may lead to collapse-in this toy model it is high salinity so forget this too.
-Will finish slides also
-
 
 # References:
 
