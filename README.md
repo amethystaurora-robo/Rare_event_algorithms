@@ -17,10 +17,12 @@ A few examples of climate systems which have undergone these critical transition
   <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/pic6.png" width="600">
 </p>
 
+#ALSO CITE THIS
 This project is looking at the Atlantic Meridional Overturning Circulation (AMOC), which is a current in the Atlantic ocean that carries warm, salty water northward, where it cools, expands and sinks, circulating back southward in the lower branch of this 'conveyor belt'. The transport of heat provided by the AMOC is largely what keeps European climate mild. In a weakened or collapsed AMOC state (its alternate stable state), the average temperature of the Northern Hemisphere would be lower, and the Inter-tropical Convergence Zone (ITCZ), may move southward, moving the equatorial rain belt southward.
 <p>
   <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/pic8.png" width="500">
 </p>
+#AND THIS
 This has implications, termed 'cascading tipping points', where it has been posited that the following sequence of events can happen:
 1. Greenland + the West Antarctic Ice Sheet shift into their alternate regime - an ice free state.
 2. The influx of freshwater into the Atlantic weakens or collapses the AMOC into its alternate state
@@ -33,22 +35,29 @@ This has implications, termed 'cascading tipping points', where it has been posi
 ## Models
 
 This project uses climate models to simulate the dynamics of the AMOC. 
-The 2-box Stommel oceanic model assumes that the ocean is split into a North and South box, each with state variables temperature and salinity. The differences of temperature and salinity control the flow, and can effectively simulate a simplified AMOC.
-The Gottwald atmospheric model combines three state variables to give a deterministic system with chaotic dynamics.
-The coupling of these two models into the Gottwald model, allows for the creation of a fast-slow system, where noise-induced transitions can occur.
-Unlike transitions from external forcing (like freshwater forcing mentioned above in the melting of Greenland and West Antarctic ice sheets), noise-induced transitions occur from a system's own internal variability. 
-A coupled model of the simplified ocean from Stommel and the Lorenz-84 atmosphere. 
+
 <p>
-See more:
-</p><p>
-  <a href="https://github.com/amethystaurora-robo/simulation_practice" target="_blank">
-    <img src="https://img.shields.io/badge/Gottwald%20Model-3366BB??style=for-the-badge&logo=github&logoColor=white"/>
-  </a>
+  <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/pic9.png" >
 </p>
+#ALSO CITE THE MODELS (3 citations)
+The 2-box Stommel oceanic model assumes that the ocean is split into a North and South box, each with state variables temperature and salinity. The differences of temperature and salinity control the flow, and can effectively simulate a simplified AMOC.
+
+<p>
+  <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/pic10.png" >
+</p>
+
+The Lorenz atmospheric model combines three state variables to give a deterministic system with chaotic dynamics.
+
+The coupling of these two models into the Gottwald model, allows for the creation of a fast-slow system, where the fast and chaotic dynamics of the atmosphere act as noise on the slower, more resilient, ocean.
+<p>
+  <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/pic11.png" >
+</p>
+A series of these little kicks in exactly the right order may be able to push the state of the system to a new equilibrium.
+Unlike transitions from external forcing (like freshwater forcing mentioned above in the melting of Greenland and West Antarctic ice sheets), noise-induced transitions occur from a system's own internal variability. However, these noise-induced transitions occur only very rarely, so a rare event algorithm is applied to sample more of these rare events.
 
 ## Rare Event Algorithm
 
-In this multi-stable system, a fast atmosphere uses a coupling term with the slower ocean, allowing for noise-induced transitions from one state to another. However, these noise-induced transitions occur only rarely, requiring an untenable number of simulation hours and computational power. As a solution, an algorithm which 'encourages' rare events, by shifting the distribution of values in an ensemble of trajectories to a threshold somewhere in the tail of the original distribution increases the number of rare events observed, allowing for statistical analysis of the transitions in these experiments.
+An algorithm which 'encourages' rare events, by shifting the distribution of values in an ensemble of trajectories to a threshold somewhere in the tail of the original distribution increases the number of rare events observed, allowing for statistical analysis of the transitions in these experiments.
 
 <p>
   <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/importance_sampling.png" width="500">
