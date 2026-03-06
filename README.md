@@ -151,6 +151,18 @@ The final aim of this experiment was to develop an early warning indicator for t
   <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/transition_2D_state.png" width="400">
 </p>
 
+# Limitations
+
+Each of the critical transitions reached in these experiments exhibited degeneracy, where all trajectories descended from one common ancestor. Because a random perturbation is added to the trajectory at each resampling time, it could be that trajectories exhibit statistical independence, and one can compute expectation values of trajectory paths under the original sampling dynamics. However, if trajectories are not sufficiently separated by the perturbation to exhibit independence, the statistics on the trajectories will be biased. In future studies, this could be increased by increasing the number of trajectories in the ensemble.
+
+Computational results indicate the existence of an instanton. However, since the Gottwald model exhibits higher dimensionality, mathematical confirmation of its existence would be required.
+
+# Future Directions
+
+It would be interesting to investigate the reason that trajectories are unable to transition back to the on state after undergoing a critical transition to the off state. One method of investigating this is with a calculation of the potential landscape of the system. 
+
+The next part of this project entails applying the same rare event algorithm with the higher-dimensional model PlaSim, and then trying different machine learning methods. 
+
 # References:
 
 1. Lucarini, V. and Bódai, T., 2017. Edge states in the climate system: exploring global instabilities and critical transitions. Nonlinearity, 30(7), pp.R32-R66.
