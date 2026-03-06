@@ -2,31 +2,30 @@
 
 ## Climate Tipping Points
 
-Many climate systems exhibit multi-stability, meaning their dynamics can shift between multiple equilibrium states. In the simplified diagram below of the potential landscape of a system, a 1-dimensional system is shown with two wells, which represent the equilibrium states of the system. The ball is the current state of the system, and it can pass between the two equilibria by passing the tipping point in different ways.
+Many climate systems exhibit multi-stability, meaning their dynamics can shift between multiple equilibrium states. In the diagram below showing a potential landscape of a 1D system, the two wells represent the system equilibrium states. The ball is the current state of the system, and it can pass between the two equilibria by passing the tipping point in different ways.
 <p>
   <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/pic5.png" width="500" >
 </p>
 
-# TODO: Cite these
 A few examples of climate systems which have undergone these critical transitions in the past are:
-* the Earth from a warm state to a 'Snowball Earth'
-* The greening of the Sahara Desert
-* ice-covered Arctic to ice-free Arctic
+* the Earth from a warm state to a 'Snowball Earth' (Lucarini et al, 2017)
+* The greening of the Sahara Desert (Pausata et al, 2020)
+* ice-covered Arctic to ice-free Arctic (Jahn et al, 2024)
 
 <p>
   <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/pic6.png" width="600">
 </p>
 
-#ALSO CITE THIS
-This project is looking at the Atlantic Meridional Overturning Circulation (AMOC), which is a current in the Atlantic ocean that carries warm, salty water northward, where it cools, expands and sinks, circulating back southward in the lower branch of this 'conveyor belt'. The transport of heat provided by the AMOC is largely what keeps European climate mild. In a weakened or collapsed AMOC state (its alternate stable state), the average temperature of the Northern Hemisphere would be lower, and the Inter-tropical Convergence Zone (ITCZ), may move southward, moving the equatorial rain belt southward.
+This project is looking at the Atlantic Meridional Overturning Circulation (AMOC), which is a current in the Atlantic ocean that carries warm, salty water northward, where it cools, expands and sinks, circulating back southward in the lower branch of this 'conveyor belt'. The transport of heat provided by the AMOC is largely what keeps European climate mild. In a weakened or collapsed AMOC state (its alternate stable state), the average temperature of the Northern Hemisphere would be lower, and the Inter-tropical Convergence Zone (ITCZ) and equatorial rain belt may shift southward. (Wunderling et al, 2021)
+
 <p>
   <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/pic8.png" width="500">
 </p>
-#AND THIS
+
 This has implications, termed 'cascading tipping points', where it has been posited that the following sequence of events can happen:
 1. Greenland + the West Antarctic Ice Sheet shift into their alternate regime - an ice free state.
 2. The influx of freshwater into the Atlantic weakens or collapses the AMOC into its alternate state
-3. The collapse of the AMOC shifts the equatorial rainbelt southward, causing drying of the Amazon rainforest and shifting it into a more savanna-like state. 
+3. The collapse of the AMOC shifts the equatorial rainbelt southward, causing drying of the Amazon rainforest and shifting it into a more savanna-like state. (Wunderling et al, 2021)
 
 <p>
   <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/pic7.png" width="500">
@@ -39,16 +38,16 @@ This project uses climate models to simulate the dynamics of the AMOC.
 <p>
   <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/pic9.png" width="500">
 </p>
-#ALSO CITE THE MODELS (3 citations)
-The 2-box Stommel oceanic model assumes that the ocean is split into a North and South box, each with state variables temperature and salinity. The differences of temperature and salinity control the flow, and can effectively simulate a simplified AMOC.
+
+The 2-box Stommel oceanic model assumes that the ocean is split into a North and South box, each with state variables temperature and salinity. The differences of temperature and salinity control the flow, and can effectively simulate a simplified AMOC. (Stommel et al 1993)
 
 <p>
   <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/pic10.png" width="500">
 </p>
 
-The Lorenz atmospheric model combines three state variables to give a deterministic system with chaotic dynamics.
+The Lorenz atmospheric model combines three state variables to give a deterministic system with chaotic dynamics. (Lorenz, 1963)
 
-The coupling of these two models into the Gottwald model, allows for the creation of a fast-slow system, where the fast and chaotic dynamics of the atmosphere act as noise on the slower, more resilient, ocean.
+The coupling of these two models into the Gottwald model, allows for the creation of a fast-slow system, where the fast and chaotic dynamics of the atmosphere act as noise on the slower, more resilient, ocean. (Gottwald, 2017)
 <p>
   <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/pic11.png" width="500">
 </p>
@@ -100,7 +99,7 @@ The algorithm used is a cloning algorithm, where trajectories are given weights 
 
 # Results
 
-The anomaly which was targeted in these experiments was 30 standard deviations below the mean. This allowed rare event sampling applied to one state variable to push the system into the alternate system state. Below is the equation used to find the value of k, the parameter which shifts the distribution of the ensemble.
+The anomaly which was targeted in these experiments was 30 standard deviations away from the mean. This allowed rare event sampling applied to one state variable to push the system into the alternate system state. Below is the equation used to find the value of k, the parameter which shifts the distribution of the ensemble.
 
 k = a/(τ/σ²)
 
@@ -135,8 +134,7 @@ Following the table above, a rare event algorithm was applied to each of the thr
   <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/salinity_shifts/salinity_lineplot_40year_1000traj_9000k.png" width="400">
 </p>
 
-When applying the rare event sampling to temperature, no transitions were observed for either of the two ensemble sizes or the three values of k selected. Below it is shown that when rare event sampling is applied to the salinity state variable and the system shifts to the AMOC off state, temperature transitions along with salinity to a higher value rather than a lower one, as expected. Temperature is shown below in green, and salinity in purple. 
-TODO: Instead of this compare with AMOC, to see temperature rise.
+When applying the rare event sampling to temperature, no transitions were observed for either of the two ensemble sizes or the three values of k selected. Below it is shown that when rare event sampling is applied to the salinity state variable and the system shifts to the AMOC off state, temperature transitions along with salinity to a higher value rather than a lower one, as expected. Temperature is shown below in green, and salinity in purple.
 
 <p>
   <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/salinity_shifts/salinity_temperature_lineplot_40year_200traj_7000k.png" width="400">
@@ -155,8 +153,13 @@ The final aim of this experiment was to develop an early warning indicator for t
 
 # References:
 
-1. (F. Ragone, personal communication, 2025)
-
-2. Ragone F, Bouchet F. Computation of extreme values of time averaged observables in climate models with large deviation techniques. J Stat Phys. 2020;179(5-6):1637-65. doi:10.1007/s10955-019-02429-7.
-
-3. Mehling, O., Börner, R. and Lucarini, V., 2024. Limits to predictability of the asymptotic state of the Atlantic Meridional Overturning Circulation in a conceptual climate model. Physica D: Nonlinear Phenomena, 459, p.134043.
+1. Lucarini, V. and Bódai, T., 2017. Edge states in the climate system: exploring global instabilities and critical transitions. Nonlinearity, 30(7), pp.R32-R66.
+2. Pausata, F.S., Gaetani, M., Messori, G., Berg, A., de Souza, D.M., Sage, R.F. and DeMenocal, P.B., 2020. The greening of the Sahara: Past changes and future implications. One Earth, 2(3), pp.235-250.
+3. Jahn, A., Holland, M.M. and Kay, J.E., 2024. Projections of an ice-free Arctic Ocean. Nature Reviews Earth & Environment, 5(3), pp.164-176.
+4. Wunderling, N., Donges, J.F., Kurths, J. and Winkelmann, R., 2021. Interacting tipping elements increase risk of climate domino effects under global warming. Earth System Dynamics, 12(2), pp.601-619.
+5. Stommel, H.M. and Young, W.R., 1993. The average T–S relation of a stochastically forced box model. Journal of physical oceanography, 23(1), pp.151-158.
+6. Lorenz, E.N., 2017. Deterministic nonperiodic flow 1. In Universality in Chaos, 2nd edition (pp. 367-378). Routledge.
+7. Gottwald, G.A., 2015. Model reduction for networks of coupled oscillators. Chaos: An Interdisciplinary Journal of Nonlinear Science, 25(5).
+8. (F. Ragone, personal communication, 2025)
+9. Ragone F, Bouchet F. Computation of extreme values of time averaged observables in climate models with large deviation techniques. J Stat Phys. 2020;179(5-6):1637-65. doi:10.1007/s10955-019-02429-7.
+10.  Mehling, O., Börner, R. and Lucarini, V., 2024. Limits to predictability of the asymptotic state of the Atlantic Meridional Overturning Circulation in a conceptual climate model. Physica D: Nonlinear Phenomena, 459, p.134043.
