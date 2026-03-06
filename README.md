@@ -28,7 +28,7 @@ This has implications, termed 'cascading tipping points', where it has been posi
 3. The collapse of the AMOC shifts the equatorial rainbelt southward, causing drying of the Amazon rainforest and shifting it into a more savanna-like state. (Wunderling et al, 2021)
 
 <p>
-  <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/pic7.png" width="500">
+  <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/pic7.png" >
 </p>
 
 ## Models
