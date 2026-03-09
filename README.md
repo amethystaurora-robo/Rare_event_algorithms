@@ -170,7 +170,7 @@ The next part of this project entails applying the same rare event algorithm wit
 3. Jahn, A., Holland, M.M. and Kay, J.E., 2024. Projections of an ice-free Arctic Ocean. Nature Reviews Earth & Environment, 5(3), pp.164-176.
 4. Wunderling, N., Donges, J.F., Kurths, J. and Winkelmann, R., 2021. Interacting tipping elements increase risk of climate domino effects under global warming. Earth System Dynamics, 12(2), pp.601-619.
 5. Stommel, H.M. and Young, W.R., 1993. The average T–S relation of a stochastically forced box model. Journal of physical oceanography, 23(1), pp.151-158.
-6. Lorenz, E.N., 2017. Deterministic nonperiodic flow 1. In Universality in Chaos, 2nd edition (pp. 367-378). Routledge.
+6. Lorenz, E.N., 1984. Irregularity: A fundamental property of the atmosphere. Tellus A, 36(2), pp.98-110.
 7. Gottwald, G.A., 2015. Model reduction for networks of coupled oscillators. Chaos: An Interdisciplinary Journal of Nonlinear Science, 25(5).
 8. (F. Ragone, personal communication, 2025)
 9. Ragone F, Bouchet F. Computation of extreme values of time averaged observables in climate models with large deviation techniques. J Stat Phys. 2020;179(5-6):1637-65. doi:10.1007/s10955-019-02429-7.
