@@ -2,12 +2,12 @@
 
 ## Climate Tipping Points
 
-Many climate systems exhibit multi-stability, meaning their dynamics can shift between multiple equilibrium states. In the diagram below showing a potential landscape of a 1D system, the two wells represent the system equilibrium states. The ball is the current state of the system, and it can pass between the two equilibria by passing the tipping point in different ways.
+Many climate sub-systems exhibit multi-stability, meaning their dynamics can shift between multiple equilibrium states. In the diagram below showing a potential landscape of a 1D system, the two wells represent the system equilibrium states. The ball is the current state of the system, and it can pass between the two equilibria by passing the tipping point in different ways.
 <p>
   <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/pic5.png" width="500" >
 </p>
 
-A few examples of climate systems which have undergone these critical transitions in the past are:
+A few examples of climate sub-systems which have undergone these critical transitions in the past are:
 * the Earth from a warm state to a 'Snowball Earth' (Lucarini et al, 2017)
 * The greening of the Sahara Desert (Pausata et al, 2020)
 * ice-covered Arctic to ice-free Arctic (Jahn et al, 2024)
@@ -22,10 +22,12 @@ This project is looking at the Atlantic Meridional Overturning Circulation (AMOC
   <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/pic8.png" width="500">
 </p>
 
-This has implications, termed 'cascading tipping points', where it has been posited that the following sequence of events can happen:
+One possible impact of climate sub-system collapse is 'cascading tipping points', where it has been posited that the following sequence of events could happen:
 1. Greenland + the West Antarctic Ice Sheet shift into their alternate regime - an ice free state.
 2. The influx of freshwater into the Atlantic weakens or collapses the AMOC into its alternate state
-3. The collapse of the AMOC shifts the equatorial rainbelt southward, causing drying of the Amazon rainforest and shifting it into a more savanna-like state. (Wunderling et al, 2021)
+3. The collapse of the AMOC shifts the equatorial rainbelt southward, causing drying of the Amazon rainforest and shifting it into a  savanna-like state. (Wunderling et al, 2021)
+
+While models disagree on the exact sequence of events, and whether the sequence could occur at all, the gravity of consequences for the climate system make the AMOC an important feature of further climate research. 
 
 <p>
   <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/pic7.png" >
