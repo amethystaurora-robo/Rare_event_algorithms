@@ -155,7 +155,7 @@ The final aim of this experiment was to develop an early warning indicator for t
 
 # Limitations
 
-Each of the critical transitions reached in these experiments exhibited degeneracy, where all trajectories descended from one common ancestor. Because a random perturbation is added to the trajectory at each resampling time, it could be that trajectories exhibit statistical independence, and one can compute expectation values of trajectory paths under the original sampling dynamics. However, if trajectories are not sufficiently separated by the perturbation to exhibit independence, the statistics on the trajectories will be biased. In future studies, this could be increased by increasing the number of trajectories in the ensemble.
+Each of the critical transitions reached in these experiments exhibited degeneracy, where all trajectories descended from one common ancestor. Because a random perturbation is added to the trajectory at each resampling time, it could be that trajectories exhibit statistical independence, and one can compute expectation values of trajectory paths under the original sampling dynamics. However, if trajectories are not sufficiently separated by the perturbation to exhibit independence, the statistics on the trajectories will be biased. In future studies, this could be mitigated by increasing the number of trajectories in the ensemble.
 
 Computational results indicate the existence of an instanton. However, since the Gottwald model exhibits higher dimensionality, mathematical confirmation of its existence would be required.
 
