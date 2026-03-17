@@ -47,7 +47,7 @@ The 2-box Stommel oceanic model assumes that the ocean is split into a North and
   <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/pic10.png" width="500">
 </p>
 
-The Lorenz atmospheric model combines three state variables to give a deterministic system with chaotic dynamics. (Lorenz, 1963)
+The Lorenz atmospheric model combines three state variables to give a deterministic system with chaotic dynamics. (Lorenz, 1984)
 
 The coupling of these two models into the Gottwald model, allows for the creation of a fast-slow system, where the fast and chaotic dynamics of the atmosphere act as noise on the slower, more resilient, ocean. (Gottwald, 2017)
 <p>
