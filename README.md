@@ -2,7 +2,7 @@
 
 ## Climate Tipping Points
 
-Many climate sub-systems exhibit multi-stability, meaning their dynamics can shift between multiple equilibrium states. In the diagram below showing a potential landscape of a 1D system, the two wells represent the system equilibrium states. The ball is the current state of the system, and it can pass between the two equilibria by passing the tipping point in different ways.
+Many climate sub-systems exhibit multi-stability, meaning their dynamics can shift between multiple equilibria. In the diagram below showing a potential landscape of a 1D system, the two wells represent the system equilibrium states. The ball is the current state of the system, and it can pass between the two equilibria by passing the tipping point in different ways.
 <p>
   <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/pic5.png" width="500" >
 </p>
