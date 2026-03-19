@@ -47,6 +47,7 @@ The Lorenz atmospheric model is a low-order 'general circulation' model, defined
 - dX/dt = -Y^2- Z^2- aX + aF,
 - dY/dt = XY - bXZ - Y + G,
 - dZ/dt = bXY + XZ - Z
+  
 where t represents time, X, Y, and Z represent the meridiional temperature gradient and amplitudes of cosine and singe phases of a chain of superposed large scale eddies, respectively; F is the meridional gradient of diabatic heating, and is the value X would be driven to, and G is asymmetric thermal forcing and the value to which Y would be driven (Lorenz, 1984, Roebber, 1994)
 
 The coupling of these two models into the Gottwald model, allows for the creation of a fast-slow system, where the fast and chaotic dynamics of the atmosphere act as noise on the slower, more resilient, ocean. (Gottwald, 2017)
