@@ -43,7 +43,11 @@ This project uses climate models to simulate the dynamics of the AMOC.
 
 The 2-box Stommel oceanic model assumes that the ocean is split into a North and South box, each with state variables temperature and salinity. The differences of temperature and salinity control the flow, and can effectively simulate a simplified AMOC. (Stommel et al 1993)
 
-The Lorenz atmospheric model combines the state variables simulating the interactions between westerlies and eddies to give a deterministic system with chaotic dynamics. (Lorenz, 1984)
+The Lorenz atmospheric model is a low-order 'general circulation' model, defined by three ordinary differential equations:
+- dX/dt = -Y^2- Z^2- aX + aF,
+- dY/dt = XY - bXZ - Y + G,
+- dZ/dt = bXY + XZ - Z
+where t represents time, X, Y, and Z represent the meridiional temperature gradient and amplitudes of cosine and singe phases of a chain of superposed large scale eddies, respectively; F is the meridional gradient of diabatic heating, and is the value X would be driven to, and G is asymmetric thermal forcing and the value to which Y would be driven (Lorenz, 1984, Roebber, 1994)
 
 The coupling of these two models into the Gottwald model, allows for the creation of a fast-slow system, where the fast and chaotic dynamics of the atmosphere act as noise on the slower, more resilient, ocean. (Gottwald, 2017)
 <p>
@@ -173,3 +177,4 @@ The next part of this project entails applying the same rare event algorithm wit
 8. (F. Ragone, personal communication, 2025)
 9. Ragone F, Bouchet F. Computation of extreme values of time averaged observables in climate models with large deviation techniques. J Stat Phys. 2020;179(5-6):1637-65. doi:10.1007/s10955-019-02429-7.
 10.  Mehling, O., Börner, R. and Lucarini, V., 2024. Limits to predictability of the asymptotic state of the Atlantic Meridional Overturning Circulation in a conceptual climate model. Physica D: Nonlinear Phenomena, 459, p.134043.
+11.  Roebber, P.J., 1995. Climate variability in a low‐order coupled atmosphere‐ocean model. Tellus A, 47(4), pp.473-494.
