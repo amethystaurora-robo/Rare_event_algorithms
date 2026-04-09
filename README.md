@@ -147,7 +147,7 @@ When applying the rare event sampling to temperature, no transitions were observ
 
 This result confirms that transitions occur in systems where salinity increases, and where temperature increases, at least initially. Once the transitions have occurred, the system ought to be able to return to the on state by applying rare event sampling in the opposite direction. However, equal forcing in the opposite direction (30 standard deviations above the mean) did not result in transitions back to the on state for either the AMOC or salinity, regardless of ensemble size chosen (200 or 1000 trajectories), and length of simulation (testing was done for 40 years and 100 years after reaching an equilibrium state.) This merits further investigation into the potential landscape of the system.
 
-The final aim of this experiment was to develop an early warning indicator for transitions in this system. In the case of noise-induced transitions, there are many paths to collapse. However, there may exist an instanton, a transition path which is exponentially more likely than the others. Below, the path of transition with the rare event algorithm applied to AMOC and applied to salinity is shown, overlapping. This hints at the existence of an instanton in this model, but a mathematical proof would be required to verify this result.
+The final aim of this experiment was to develop an early warning indicator for transitions in this system. In the case of noise-induced transitions, there are many paths to collapse. However, there may exist an instanton, a transition path which is exponentially more likely than the others. Below, the path of transition with the rare event algorithm applied to AMOC and applied to salinity is shown, overlapping. This hints at the existence of an instanton in this model, but a mathematical proof would be required to verify this result. Given that an instanton path has been found in higher-dimensional models, I have decided that it is unnecessary and unhelpful to the scientific literature to compute an instanton path in this model.
 
 <p>
   <img src="https://github.com/amethystaurora-robo/Rare_event_algorithms/blob/main/figures/transition_2D_time.png" width="400">
@@ -163,6 +163,8 @@ Computational results indicate the existence of an instanton. However, since the
 # Future Directions
 
 It would be interesting to investigate the reason that trajectories are unable to transition back to the on state after undergoing a critical transition to the off state. One method of investigating this is with a calculation of the potential landscape of the system. 
+
+The other aspect of this project which I will shortly be improving is amending the rare event algorithm. Rather than the a weight that effectively chooses the lowest values to continue the simulations, I will apply ML methods in the 'committor function', and compare the two. More on this later.
 
 The next part of this project entails applying the same rare event algorithm with the higher-dimensional model PlaSim, and then trying different machine learning methods. 
 
